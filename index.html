@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title>Document</title>
+</head>
+
+<body onload="createFilteredTable()">
+    <div id="container">
+        <!-- Added closing of h2 tag -->
+        <h2> Demo Table Of Candidates </h2>
+        <table class="candidates" id="candidates_example">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Skills</th>
+            </tr>
+           </thead>
+            <tr>
+                <td>Cirpo</td>
+                <td>JavaScript, Docker</td>
+            </tr>
+            <tr>
+                <td>Louis</td>
+                <td>Java, AEM</td>
+            </tr>
+            <tr>
+                <td>Nermin</td>
+                <td>.NET, Azure</td>
+            </tr>
+        </table>
+        <!-- Added closing of h2 htag -->
+        <h2 id="filterTableName"> Filtered Candidates</h2>
+
+        <input id="filterTextBox" type="text"><button onclick="customFilterTable()">Change Filter</button>
+    </div>
+
+</body>
+</html>
